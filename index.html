@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dark/Light mode</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <h1>Mubi</h1>
+        </div>
+        <div class="links" id="links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </div>
+        <div class="mode-btn">
+            <img src="moon-64.webp" alt="" id="icon">
+
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-section">
+            <h1>I'm <span>Muhammad</span> Mubashir</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim nam eum maxime perspiciatis architecto
+                amet dignissimos omnis! Ut amet dolorum aliquid, quos explicabo dignissimos sequi quam unde! Qui, iusto.
+            </p>
+            <button>Download CV</button>
+        </div>
+    </div>
+    <script>
+
+        document.getElementById("icon").onclick = function () {
+            if (document.body.classList.toggle("darktheme")) {
+                document.getElementById("icon").src = "SUN-64.webp"
+            } else {
+                document.getElementById("icon").src = "moon-64.webp"
+            }
+        }
+    </script>
+</body>
+
+</html>
